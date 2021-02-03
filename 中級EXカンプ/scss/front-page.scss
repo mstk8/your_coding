@@ -1,0 +1,430 @@
+@import "setting/config";
+@import "base/base";
+@import "module/header";
+@import "module/button";
+@import "module/accordion";
+
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.main {
+    background-image: url(../img/circle.png);
+    background-position: top -150px right -120px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    &-inner {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 100px 20px;
+    }
+    &-copy {
+        text-align: left;
+        h2 {
+            font-size: 32px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+    }
+    &-img {
+        position: absolute;
+        right: 15%;
+        top: 20%;
+        z-index: 1000;
+    }
+}
+
+
+/*  */
+
+.feature {
+    &-ttl {
+        margin-top: 40px;
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+
+        span {
+            font-size: 16px;
+            color: $sub-ttl-color;
+            display: block;/* これでタイトルの下へ配置できる */
+            margin-top: 20px;
+        }
+    }
+    &-inner {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-heading {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 64px;
+    }
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 93px;
+        h3 {
+            font-size: 24px;
+            line-height: 1.8;
+            font-weight: bold;
+            margin-bottom: 54px;
+        }
+        p {
+            line-height: 1.5;
+            font-weight: bold;
+        }
+    }
+}
+
+
+/*  */
+
+.price {
+    background-color: $bg-color;
+    padding: 64px 20px 128px;
+    &-inner {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-ttl {
+        margin-top: 40px;
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+        span {
+            font-size: 16px;
+            color: $sub-ttl-color;
+            display: block;/* これでタイトルの下へ配置できる */
+            margin-top: 20px;
+        }
+
+    }
+    table {
+        width: 100%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        background-color: #fff;
+        border-collapse: collapse;/* これをしないと線が２本になる */
+        th {
+            width: 30%;
+            padding: 30px;
+            min-width: 300px;/* これで最低300px確保し勝手に改行されるのを防ぐ */
+            border: 1px solid #f0eded;
+        }
+        td {
+            width: 70%;
+            text-align: left;
+            padding: 30px;
+            border: 1px solid #f0eded;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+/*  */
+
+.faq {
+    padding-bottom: 86px;
+
+    &-ttl {
+        margin-top: 40px;
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+
+        span {
+            font-size: 16px;
+            color: $sub-ttl-color;
+            display: block;/* これでタイトルの下へ配置できる */
+            margin-top: 20px;
+        }
+    }
+    &-inner {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+
+/*  */
+
+.blog {
+    background: $bg-color;
+    padding: 40px 0 91px;
+    max-width: 100%;
+
+    &-ttl {
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+
+        span {
+            font-size: 16px;
+            color: $sub-ttl-color;
+            display: block;/* これでタイトルの下へ配置できる */
+            margin-top: 20px;
+        }
+    }
+    &-card-box {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 70px;
+    }
+    &-card {
+        width: 389px;
+        height: 387px;
+        color: $txt-color;
+        background: #fff;
+        margin-right: 30px;
+        box-shadow: 0px 3px 6px #00000029;
+        position: relative;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        img {
+            width: 389px;
+            height: 260px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 18px;
+
+            span {
+                position: absolute;
+                top: 353px;
+                right: 32px;
+            }
+        }
+    }
+
+}
+
+
+/*  */
+
+.works {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 90px;
+
+    &-ttl {
+        margin-top: 40px;
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+
+            span {
+            font-size: 16px;
+            color: $sub-ttl-color;
+            display: block;/* これでタイトルの下へ配置できる */
+            margin-top: 20px;
+            }
+    }
+
+    &-inner {
+        text-align: center;
+    }
+
+    &-card {
+        width: 322px;
+        height: 407px;
+        color: $txt-color;
+        display: inline-block;/* これで中央に位置が移動できた */
+        border-radius: 10px;
+        border: 1px solid #DDDDDD;
+
+        img {
+            width: 322px;
+            height: 210px;
+        }
+
+        &-top {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+            padding-top: 18px;
+            padding-left: 18px;
+            padding-bottom: 30px;
+        }
+
+        &-bottom {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 18px;
+        }
+    }
+}
+
+
+
+/*  */
+
+.contact {
+    max-width: 100%;
+    background: $gradient;
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+    &-ttl {
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #fff;
+        span {
+            font-size: 16px;
+            display: block;
+            margin-top: 20px;
+        }
+    }
+    p {
+        margin-bottom: 44px;
+        line-height: 1.8;
+    }
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    &-form {
+        width: 908px;
+        height: 689px;
+        background: #FFFFFF;
+        margin-left: auto;
+        margin-right: auto;
+        color: $txt-color;
+    
+
+        &-wrapper {
+            text-align: left;
+        }
+    }
+
+.label {
+   font-size: 16px;
+   font-weight: bold;
+   
+   &-span {
+       width: 60px;
+       height: 30px;
+       background: #0C449B;
+       color: #FFFFFF;
+       font-size: 14px;
+       font-weight: bold;
+       padding: 4px 16px;
+       border-radius: 10px;
+       margin-left: 23px;
+   }
+}
+
+.field {
+    &-name {
+        width: 499px;
+        height: 43px;
+        background: #EEFBFB;
+        border: none;
+
+    }
+    &-email {
+        width: 499px;
+        height: 43px;
+        background: #EEFBFB;
+        border: none;
+
+    }
+    &-text {
+        width: 783px;
+        height: 179px;
+        background: #EEFBFB;
+        border: none;
+        resize: none;
+    }
+}
+
+
+.submit {
+    width: 155px;
+    height: 37px;
+    background: $btn-color;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0, 0.16);
+
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 377px;
+    cursor: pointer;
+}
+
+
+.box {
+    padding-top: 35px;
+    padding-left: 63px;
+}
+.box-input {
+    margin-top: 25px;
+}
+
+.privacy {
+    margin-top: 27px;
+    margin-left: 318px;
+    margin-bottom: 30px;
+}
+}
+
+
+
+.footer {
+    height: 244px;
+    text-align: center;
+
+    &-ttl {
+        font-size: 24px;
+        font-weight: bold;
+        padding-top: 43px;
+    }
+
+    &-box {
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 21px;
+        padding-bottom: 52px;
+
+        &-right {
+           margin-left: 29px; 
+        }
+    }
+}
+
+
+
+
+
+
+
