@@ -1,0 +1,151 @@
+@charset "UTF-8";
+.humburger {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .blog p {
+    font-size: 14px;
+    line-height: 1.2rem;
+    margin-top: 8px;
+  }
+  .blog p span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-inner {
+    padding: 0;
+  }
+  .header-ttl {
+    font-size: 18px;
+  }
+  .header img {
+    width: 40px;
+    height: 40px;
+  }
+  .main-copy {
+    margin-left: 30px;
+  }
+  .feature-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* orderで順番を入れ替える */
+  }
+  .feature-box .order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .feature-box .order-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .feature-box .order-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .feature-box h3 {
+    margin-top: 20px;
+  }
+  .blog-ttl {
+    margin-bottom: 10px;
+  }
+  .blog-card-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog-card {
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .header-nav, .header-btn {
+    display: none;
+  }
+  .humburger {
+    display: block;
+  }
+  .humburger button {
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+  .main-inner {
+    padding: 50px 20px;
+  }
+  .main-img {
+    width: 270px;
+    height: auto;
+    right: 5%;
+    top: 50%;
+  }
+  .contact .form-inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .contact .form .submit button {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-copy {
+    margin-left: 20px;
+  }
+  .main-copy h2 br {
+    display: none;
+  }
+  .main-copy p br {
+    display: none;
+  }
+  .main-img {
+    width: 130px;
+    right: 5%;
+    top: 70%;
+  }
+  .price table th {
+    padding: 15px;
+  }
+  .price table td {
+    padding: 15px;
+  }
+  .faq h4, .faq p {
+    font-size: 14px;
+  }
+  .accordion-title {
+    height: auto;
+    line-height: 1.2em;
+    padding: 20px;
+  }
+  .blog-card-box {
+    margin: 0 30px;
+  }
+  .blog-card {
+    width: auto;
+    height: 340px;
+  }
+  .blog img {
+    width: auto;
+    height: auto;
+  }
+  .blog p span {
+    top: 320px;
+  }
+  .footer-box-right {
+    display: block;
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
